@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { v4, validate } from 'uuid';
 import type { RsbuildPlugin } from '@rsbuild/core';
+import { v4, validate } from 'uuid';
 
 interface DevToolsJSON {
   workspace?: {
