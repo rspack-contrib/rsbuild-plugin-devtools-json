@@ -46,7 +46,7 @@ The `/.well-known/appspecific/com.chrome.devtools.json` endpoint will serve the 
 }
 ```
 
-where `root` is the absolute path to your `{projectRoot}` folder, and `uuid` is a random v4 UUID, generated the first time that you start the Rsbuild dev server with the plugin installed (it is henceforth cached in the Rsbuild cache folder).
+Here `root` is the absolute path to your `{projectRoot}` folder, and `uuid` is a random v4 UUID, generated the first time that you start the Rsbuild dev server with the plugin installed (it is henceforth cached in the Rsbuild cache folder).
 
 ## Credits
 
