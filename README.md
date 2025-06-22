@@ -14,6 +14,8 @@ This enables seamless integration with the new Chrome DevTools features:
 1. [DevTools Project Settings (devtools.json)](https://goo.gle/devtools-json-design)
 2. [Automatic Workspace folders](http://goo.gle/devtools-automatic-workspace-folders)
 
+<img width="800" alt="Screenshot 2025-06-22 at 21 45 26" src="https://github.com/user-attachments/assets/daae3e57-f0fc-43c1-b191-8f916bc542ae" />
+
 ## Installation
 
 ```bash
