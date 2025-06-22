@@ -35,5 +35,8 @@ jobs:
       - name: Install Dependencies
         run: pnpm install && npx playwright install chromium
 
+      - name: Run Linter
+        run: pnpm run lint
+
       # - name: Run Test
       #   run: pnpm run test
