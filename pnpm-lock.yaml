@@ -28,6 +28,8 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
+  playground: {}
+
 packages:
 
   '@ast-grep/napi-darwin-arm64@0.37.0':
