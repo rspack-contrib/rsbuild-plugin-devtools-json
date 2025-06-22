@@ -15,15 +15,17 @@
   ],
   "scripts": {
     "build": "rslib build",
-    "check": "biome check --write",
+    "lint": "biome check",
+    "lint:write": "biome check . --write",
     "dev": "rslib build --watch",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "bump": "npx bumpp"
   },
   "dependencies": {
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.0",
+    "@biomejs/biome": "2.0.4",
     "@rslib/core": "0.10.2",
     "@types/node": "24.0.3",
     "typescript": "5.8.3"
