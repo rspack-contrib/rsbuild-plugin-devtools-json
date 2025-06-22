@@ -1,6 +1,7 @@
 {
   "name": "rsbuild-plugin-devtool-json",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "license": "MIT",
   "type": "module",
   "exports": {
     ".": {
@@ -18,18 +19,17 @@
     "dev": "rslib build --watch",
     "format": "biome format --write"
   },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  },
   "devDependencies": {
     "@biomejs/biome": "2.0.0",
     "@rslib/core": "0.10.2",
     "@types/node": "24.0.3",
     "typescript": "5.8.3"
   },
-  "private": true,
-  "packageManager": "pnpm@9.15.2",
-  "dependencies": {
-    "uuid": "^11.1.0"
-  },
   "peerDependencies": {
     "@rsbuild/core": "^1"
-  }
+  },
+  "packageManager": "pnpm@9.15.2"
 }
