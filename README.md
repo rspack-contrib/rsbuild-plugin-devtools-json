@@ -2,6 +2,13 @@
 
 Rsbuild plugin for generating the Chrome DevTools project settings file on-the-fly in the dev server.
 
+<p>
+  <a href="https://npmjs.com/package/rsbuild-plugin-devtool-json">
+   <img src="https://img.shields.io/npm/v/rsbuild-plugin-devtool-json?style=flat-square&colorA=564341&colorB=EDED91" alt="npm version" />
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&colorA=564341&colorB=EDED91" alt="license" />
+</p>
+
 This enables seamless integration with the new Chrome DevTools features:
 
 1. [DevTools Project Settings (devtools.json)](https://goo.gle/devtools-json-design)
