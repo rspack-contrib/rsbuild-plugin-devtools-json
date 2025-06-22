@@ -12,7 +12,9 @@ interface DevToolsJSON {
 
 const ENDPOINT = '/.well-known/appspecific/com.chrome.devtools.json';
 
-const plugin = (options?: { uuid: string }): RsbuildPlugin => ({
+export const pluginDevtoolsJson = (options?: {
+  uuid: string;
+}): RsbuildPlugin => ({
   name: 'rsbuild-plugin-devtools-json',
   setup(api) {
     if (process.env.NODE_ENV !== 'development') {
@@ -88,5 +90,3 @@ const plugin = (options?: { uuid: string }): RsbuildPlugin => ({
     });
   },
 });
-
-export default plugin;

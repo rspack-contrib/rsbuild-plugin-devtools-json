@@ -19,11 +19,11 @@ Add it to your Rsbuild config:
 
 ```js
 import { defineConfig } from "@rsbuild/core";
-import { devtoolsJson } from "rsbuild-plugin-devtool-json";
+import { pluginDevtoolsJson } from "rsbuild-plugin-devtool-json";
 
 export default defineConfig({
   plugins: [
-    devtoolsJson(),
+    pluginDevtoolsJson(),
     // ...
   ],
 });
@@ -32,7 +32,7 @@ export default defineConfig({
 While the plugin can generate a UUID and save it in Rsbuild cache, you can also specify it in the options like in the following:
 
 ```js
-devtoolsJson({ uuid: "6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b" });
+pluginDevtoolsJson({ uuid: "6ec0bd7f-11c0-43da-975e-2a8ad9ebae0b" });
 ```
 
 The `/.well-known/appspecific/com.chrome.devtools.json` endpoint will serve the project settings as JSON with the following structure:
