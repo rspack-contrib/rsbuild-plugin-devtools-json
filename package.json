@@ -1,6 +1,7 @@
 {
   "name": "rsbuild-plugin-devtools-json",
   "version": "0.2.2",
+  "repository": "https://github.com/rspack-contrib/rsbuild-plugin-devtools-json",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -15,12 +16,12 @@
   ],
   "scripts": {
     "build": "rslib build",
+    "bump": "npx bumpp",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
     "lint": "biome check",
     "lint:write": "biome check . --write",
-    "dev": "rslib build --watch",
-    "prepare": "simple-git-hooks && npm run build",
-    "format": "biome format --write",
-    "bump": "npx bumpp"
+    "prepare": "simple-git-hooks && npm run build"
   },
   "simple-git-hooks": {
     "pre-commit": "npx nano-staged"
@@ -42,7 +43,7 @@
     "typescript": "5.8.3"
   },
   "peerDependencies": {
-    "@rsbuild/core": "^1"
+    "@rsbuild/core": "1.x"
   },
   "peerDependenciesMeta": {
     "@rsbuild/core": {
