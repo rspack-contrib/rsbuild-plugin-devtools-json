@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@rsbuild/core':
-        specifier: ^1
+        specifier: 1.x
         version: 1.3.22
       uuid:
         specifier: ^11.1.0
