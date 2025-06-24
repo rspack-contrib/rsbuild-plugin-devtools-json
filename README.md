@@ -46,6 +46,16 @@ pluginDevtoolsJson({
 });
 ```
 
+You can also specify a custom root path for the DevTools project settings:
+
+```js
+pluginDevtoolsJson({
+  rootPath: "/path/to/custom/root",
+});
+```
+
+This is particularly useful in monorepo setups, where you might want to set the root path to the monorepo root directory, especially when used with [rsbuild-plugin-source-build](https://github.com/rspack-contrib/rsbuild-plugin-source-build). If not provided, the default root path from Rsbuild context will be used.
+
 The `/.well-known/appspecific/com.chrome.devtools.json` endpoint will serve the project settings as JSON with the following structure:
 
 ```json
