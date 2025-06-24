@@ -36,7 +36,7 @@ jobs:
       - name: Publish
         uses: JS-DevTools/npm-publish@v3
         with:
-          token: ${{ secrets.RSBUILD_PLUGIN_NPM_TOKEN }}
+          token: ${{ secrets.RSBUILD_PLUGIN_DEVTOOLS_JSON_NPM_TOKEN }}
 
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
