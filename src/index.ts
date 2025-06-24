@@ -17,7 +17,13 @@ export type PluginDevtoolsJsonOptions = {
    * The UUID to use for the DevTools project settings.
    * If not provided, a new UUID will be generated.
    */
-  uuid: string;
+  uuid?: string;
+  /**
+   * The root path for the DevTools project settings.
+   * In monorepo, you can set this to the monorepo root directory, especially when used with [rsbuild-plugin-source-build](https://github.com/rspack-contrib/rsbuild-plugin-source-build).
+   * If not provided, the default root path from Rsbuild context will be used.
+   */
+  rootPath?: string;
 };
 
 export const pluginDevtoolsJson = (
@@ -58,10 +64,10 @@ export const pluginDevtoolsJson = (
           return next();
         }
 
-        let root = api.context.rootPath;
+        let root = options?.rootPath || api.context.rootPath;
 
         // WSL case detection
-        if (process.env.WSL_DISTRO_NAME) {
+        if (!options?.rootPath && process.env.WSL_DISTRO_NAME) {
           // Convert Linux path to Windows path format for WSL
           root = path
             .join('\\\\wsl.localhost', process.env.WSL_DISTRO_NAME, root)
