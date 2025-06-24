@@ -18,8 +18,17 @@
     "lint": "biome check",
     "lint:write": "biome check . --write",
     "dev": "rslib build --watch",
+    "prepare": "simple-git-hooks && npm run build",
     "format": "biome format --write",
     "bump": "npx bumpp"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx nano-staged"
+  },
+  "nano-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
   },
   "dependencies": {
     "uuid": "^11.1.0"
@@ -28,10 +37,17 @@
     "@biomejs/biome": "2.0.4",
     "@rslib/core": "0.10.2",
     "@types/node": "24.0.3",
+    "nano-staged": "^0.8.0",
+    "simple-git-hooks": "^2.13.0",
     "typescript": "5.8.3"
   },
   "peerDependencies": {
     "@rsbuild/core": "^1"
+  },
+  "peerDependenciesMeta": {
+    "@rsbuild/core": {
+      "optional": true
+    }
   },
   "packageManager": "pnpm@9.15.2"
 }

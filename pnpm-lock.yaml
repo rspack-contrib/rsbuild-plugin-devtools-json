@@ -24,6 +24,12 @@ importers:
       '@types/node':
         specifier: 24.0.3
         version: 24.0.3
+      nano-staged:
+        specifier: ^0.8.0
+        version: 0.8.0
+      simple-git-hooks:
+        specifier: ^2.13.0
+        version: 2.13.0
       typescript:
         specifier: 5.8.3
         version: 5.8.3
@@ -380,6 +386,11 @@ packages:
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
+  nano-staged@0.8.0:
+    resolution: {integrity: sha512-QSEqPGTCJbkHU2yLvfY6huqYPjdBrOaTMKatO1F8nCSrkQGXeKwtCiCnsdxnuMhbg3DTVywKaeWLGCE5oJpq0g==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    hasBin: true
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -399,6 +410,10 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  simple-git-hooks@2.13.0:
+    resolution: {integrity: sha512-N+goiLxlkHJlyaYEglFypzVNMaNplPAk5syu0+OPp/Bk6dwVoXF6FfOw2vO0Dp+JHsBaI+w6cm8TnFl2Hw6tDA==}
+    hasBin: true
 
   strip-bom@3.0.0:
     resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
@@ -738,6 +753,10 @@ snapshots:
 
   minimist@1.2.8: {}
 
+  nano-staged@0.8.0:
+    dependencies:
+      picocolors: 1.1.1
+
   picocolors@1.1.1: {}
 
   picomatch@4.0.2: {}
@@ -752,6 +771,8 @@ snapshots:
       tsconfig-paths: 4.2.0
     optionalDependencies:
       typescript: 5.8.3
+
+  simple-git-hooks@2.13.0: {}
 
   strip-bom@3.0.0: {}
 
