@@ -52,7 +52,7 @@ export const pluginDevtoolsJson = (
 
       const uuid = v4();
       fs.writeFileSync(uuidPath, uuid, { encoding: 'utf-8' });
-      logger.info(
+      logger.debug(
         `[rsbuild-plugin-devtools-json] Generated UUID '${uuid}' for DevTools project settings.`,
       );
       return uuid;
